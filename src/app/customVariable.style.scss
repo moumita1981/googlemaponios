@@ -1,0 +1,142 @@
+
+//Variables
+
+$space-30: 30px;
+$btn-border-radius-base:    0px;
+$padding-base-vertical:     0px;
+$padding-base-horizontal:   30px;
+$btn-default-color:         #000;
+$btn-default-border:        transparent;
+$opacity-50:                0.5;
+$opacity-100:               1;
+$coloured-green:           #187742;
+$color-grey:               #f4f4f4;
+$color-red:                #eb212e;
+$cyan:                     #00afec;
+$light-red:                #EA5940;
+$dark-grey:                #e0e0e0;
+$light-grey:               #efefef;
+$cloud-grey:               #dedede;
+$map-transparency:         rgba(24, 119, 66, 0.2);
+$success-map-transparency: rgba(0,0,0,0.7);
+$top-nav-hover:            rgba(255,255,255, 0.2);
+$icon-font-path:           '~bootstrap-sass/assets/fonts/bootstrap/';
+$copyright-color:          rgb(68, 68, 68);
+$copyright-bgcolor:        rgba(255, 255, 255, 0.7);
+$bgcolor-panel:            rgba(255, 255, 255, 0.8);
+$disabled-btn :            rgba(0,0,0,0.7); 
+$copyright-color:          rgb(68, 68, 68);
+$copyright-bgcolor:        rgba(255, 255, 255, 0.7);
+$loginshow-transparency:   0.6;
+$black-transperncy-6:        rgba(255, 255, 255, 0.6);
+$black-transperncy-8:        rgba(255, 255, 255, 0.8);
+$small-lavel:              rgba(0,0,0, 0.6);
+$field-list:                rgba(0,0,0,0.8);
+//** Form-control custom Variables.
+$input-height-base:         40px;
+$input-color:               #000;
+$input-border-radius:       0px;
+$form-group-margin-bottom:  7px;
+$input-border-focus:        #00afec;
+$error-border-width:       2px;
+$input-bg-disabled:         #e0e0e0;
+$sky-blue:                  #4E8BBA;
+$white:                     #fff;
+$black:                     #000;
+$lighter-grey:              #999;
+$light-gray:                #ececec;
+$dimgrey:                   #e8e8e8;
+$dim-light-gray:            #ececec;
+$select-grey:               #e1e1e1;
+$pagination-grey:           #eeeeee;
+$light-green:               #e7f1ec;
+$temperature-border:        rgba(0,0,0,0.1);
+$landing-bgcolor:           rgba(255, 255, 255, 0.8);
+$scroll-bgcolor:            rgba(0, 0, 0, 0.1);
+$table-header-color:        #a3a3a3;
+$blue:                      #00f;
+$orange:                    #ffa500;
+$red:                       #ff0000;
+$dark-red:                  #e73c00;
+$purple:                    #800080;
+$calender-bggray:           #f1f1f1;
+$barchart-color:            #cdd9f3;
+$error-bgcolor:             #ffd238;
+$color_mercury_approx:      #e7e7e7;
+$color_concrete_approx:     #f3f3f3;
+$color_storm_dust_approx:   #666;
+$color_alto_approx:         #ddd;
+$color_apple_approx:        #4caf50;
+$heighlighted-gray:         #d1d1d1;
+$footer-bg:                 #c0c0c0;
+$color-hgrey:               #878787;
+$green-opecity:             rgba(24, 119, 66, 0.3);
+$green-opecity-bg:          rgba(24, 119, 66, 0.5);
+$light-gray-border:         #ccc;
+$coloured-green-hover :     #094e2a;
+$grey-btn-background:       #f7f7f7;
+$fr_rect:                   #d1c673;
+$ir_rect:                   #a9c1db;
+$ha_rect:                   #ecee9d;
+$se_rect:                   #b6e48c;
+$ti_rect:                   #ded3b2;
+$cp_rect:                   #7fc755;
+
+$workspace-fill-color1:     #86c363;
+$workspace-fill-color2:     #a1bedf;
+$workspace-fill-color3:     #d1c578;
+$workspace-fill-color4:     #a59786;
+$workspace-fill-color5:     #95d8c6;
+$workspace-fill-color6:     #eebc87;
+$workspace-fill-color7:     #9dbfbc;
+$workspace-border-color1:   #187742;
+$workspace-border-color2:   #2d609a;
+$workspace-border-color3:   #958628;
+$workspace-border-color4:   #685032;
+$workspace-border-color5:   #289c7d;
+$workspace-border-color6:   #b77734;
+$workspace-border-color7:   #378881;
+$coloured-green-hover:      #094e2a;
+$color-grey-text:           #959595; 
+$color-grey-shadow:         #888888;
+
+// Variables for height
+
+$view-task-height : 90px;
+
+// Variables for cursor
+$hover-cursor: pointer;
+
+// Variables for clear
+
+$clear-elm: both;
+
+//mixins
+
+@mixin button-style($color, $background,$opacity) {
+  color: $color;
+  background-color: $background;
+  opacity:$opacity;
+  font-size:18px;
+  &:hover {
+    color: $color;
+    background-color: $background;
+  }
+}
+
+//mixin for Form-control.
+
+@mixin input-box($background){
+  background-color: $background; 
+}
+@mixin form-validation($border-width,$border-color){
+  border-width: $border-width;
+  border-color: $border-color;
+}
+//mixin for placeholder
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}   /* Chrome/Opera/Safari */
+  :-moz-placeholder           {@content}   /* Firefox 18- */
+  ::-moz-placeholder          {@content}   /* Firefox 19+ */
+  :-ms-input-placeholder      {@content}   /* IE 10+ */
+}

@@ -1,0 +1,15 @@
+<div *ngIf="(farm!= null)">
+  <h3>My Farm</h3>
+
+  <h4>{{farm.name}}</h4>
+
+  <map [center]="farm.center" [sizeParam]='farm.sizeParam'>
+  </map>
+
+  <table width="100%">
+    <tr *ngFor="let field of fields">
+      <td width="50%"><map [center]="field.center" [sizeParam]='field.sizeParam'></map></td>
+      <td align="left">{{field.name}}</td>
+    </tr>
+  </table>
+</div>
